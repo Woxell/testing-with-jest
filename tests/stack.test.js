@@ -4,6 +4,11 @@ test('peek on empty stack returns undefined', () => {
     expect(stack.peek()).toBeUndefined();
 });
 
+//Eget test
+test('pop on empty stack returns "Stacken är tom"', () => {
+    expect(stack.pop()).toBe("Stacken är tom");
+});
+
 test('peek on stack with one element returns that element', () => {
     stack.push(1);
     expect(stack.peek()).toBeDefined();

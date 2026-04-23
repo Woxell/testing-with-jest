@@ -34,3 +34,17 @@ describe('Clicking "Pusha till stacken"', () => {
         await alert.accept();
     });
 });
+
+describe('Popping the stack', () => {
+    it('should update the currently topmost item', async () => {
+        let push = await driver.findElement(By.id('push'));
+        await push.click();
+        let alert = await driver.switchTo().alert();
+        await alert.sendKeys("Äpplen");
+        await alert.accept();
+        let pop = await driver.findElement(By.id('pop'));
+        await pop.click();
+        let topOfStack = await driver.findElement(By.id('top_of_stack')).getText();
+        expect(topOfStack).toEqual("Bananer");
+    });
+});
