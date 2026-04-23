@@ -1,0 +1,25 @@
+{
+  "name": "testing-with-jest",
+  "version": "1.0.0",
+  "description": "This repository is used to test and practice **Jest** and **npm** workflows.",
+  "main": "src/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Woxell/testing-with-jest.git"
+  },
+  "author": "andre woxell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Woxell/testing-with-jest/issues"
+  },
+  "homepage": "https://github.com/Woxell/testing-with-jest#readme",
+  "dependencies": {
+    "underscore": "^1.13.8"
+  }
+}
