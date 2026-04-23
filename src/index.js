@@ -11,6 +11,8 @@ window.onload = function () {
     pop.addEventListener("click", function () {
         var text = "Tog bort " + stack.pop();
         alert(text);
+        //Åtgärdar enligt min nya unit test
+        display.innerHTML = stack.peek() === "Stacken är tom" ? "n/a" : stack.peek();
     });
 
     push.addEventListener("click", function () {

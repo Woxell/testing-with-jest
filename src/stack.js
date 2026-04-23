@@ -9,7 +9,8 @@ exports.push = function (x) {
 
 // Returnerar det översta elementet i stacken och tar bort det
 exports.pop = function () {
-    return stack.pop();
+    //åtgärdar enligt min nya unit test
+    return stack.length > 0 ? stack.pop() : "Stacken är tom";
 }
 
 // Returnerar det översta elementet i stacken
